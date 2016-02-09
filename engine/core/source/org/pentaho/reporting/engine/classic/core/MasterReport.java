@@ -190,6 +190,7 @@ public class MasterReport extends AbstractReportDefinition {
    * The resource manager is used to load the report resources.
    */
   private transient ResourceManager resourceManager;
+  private transient String contentCacheKey;
   private ReportParameterDefinition parameterDefinition;
   private ReportEnvironment reportEnvironment;
   private ReportParameterValues parameterValues;
@@ -608,6 +609,15 @@ public class MasterReport extends AbstractReportDefinition {
 
   public void setStyleSheetReference( final ResourceKey styleSheetReference ) {
     setAttribute( AttributeNames.Core.NAMESPACE, AttributeNames.Core.STYLE_SHEET_REFERENCE, styleSheetReference );
+  }
+
+  public String getContentCacheKey() {
+    return contentCacheKey;
+  }
+
+  public void setContentCacheKey( final String contentCacheKey ) {
+    this.contentCacheKey = contentCacheKey;
+    notifyNodePropertiesChanged( contentCacheKey );
   }
 
   public boolean isStrictLegacyMode() {
