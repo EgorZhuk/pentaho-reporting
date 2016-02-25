@@ -131,6 +131,10 @@ public abstract class AbstractReportProcessor implements ReportProcessor {
     if ( yieldRate > 0 ) {
       addReportProgressListener( new YieldReportListener( yieldRate ) );
     }
+    for ( ReportProgressListener reportProgressListener : report.getReportProgressListeners() ) {
+      this.addReportProgressListener( reportProgressListener );
+    }
+
     final String profile =
         configuration.getConfigProperty( "org.pentaho.reporting.engine.classic.core.ProfileReportProcessing" );
     if ( "true".equals( profile ) ) {

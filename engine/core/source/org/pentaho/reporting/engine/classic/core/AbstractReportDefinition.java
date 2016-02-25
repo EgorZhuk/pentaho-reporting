@@ -25,6 +25,7 @@ import org.pentaho.reporting.engine.classic.core.designtime.Change;
 import org.pentaho.reporting.engine.classic.core.designtime.DesignTimeUtil;
 import org.pentaho.reporting.engine.classic.core.event.ReportModelEvent;
 import org.pentaho.reporting.engine.classic.core.event.ReportModelListener;
+import org.pentaho.reporting.engine.classic.core.event.ReportProgressListener;
 import org.pentaho.reporting.engine.classic.core.filter.types.bands.DetailsFooterType;
 import org.pentaho.reporting.engine.classic.core.filter.types.bands.DetailsHeaderType;
 import org.pentaho.reporting.engine.classic.core.function.Expression;
@@ -1050,6 +1051,24 @@ public abstract class AbstractReportDefinition extends Section implements Report
       return;
     }
     eventListeners.remove( ReportModelListener.class, listener );
+  }
+
+  public void addReportProgressListener( final ReportProgressListener listener ) {
+    if ( eventListeners == null ) {
+      eventListeners = new EventListenerList();
+    }
+    this.eventListeners.add( ReportProgressListener.class, listener );
+  }
+
+  public void removeReportProgressListener( final ReportProgressListener listener ) {
+    if ( eventListeners == null ) {
+      return;
+    }
+    eventListeners.remove( ReportProgressListener.class, listener );
+  }
+
+  public ReportProgressListener[] getReportProgressListeners() {
+    return eventListeners.getListeners( ReportProgressListener.class );
   }
 
   public void fireModelLayoutChanged( final ReportElement node, final int type, final Object parameter ) {
