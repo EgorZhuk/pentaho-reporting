@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho:pdi-osgi-bridge-core:7.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pdi-osgi-bridge-core/7.1-SNAPSHOT/pdi-osgi-bridge-core-7.1-20161117.074018-29.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pdi-osgi-bridge-core/7.1-SNAPSHOT/pdi-osgi-bridge-core-7.1-20161117.074018-29-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pdi-osgi-bridge-core/7.1-SNAPSHOT/pdi-osgi-bridge-core-7.1-20161117.074018-29-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho:pentaho-registry:7.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-registry/7.1-SNAPSHOT/pentaho-registry-7.1-20161117.041312-87.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-registry/7.1-SNAPSHOT/pentaho-registry-7.1-20161117.041312-87-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-registry/7.1-SNAPSHOT/pentaho-registry-7.1-20161117.041312-87-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

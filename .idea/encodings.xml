@@ -1,7 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" defaultCharsetForPropertiesFiles="ISO-8859-1">
-    <file url="PROJECT" charset="US-ASCII" />
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/datasource-editor-cda" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/datasource-editor-external" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/datasource-editor-jdbc" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/datasource-editor-kettle" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/datasource-editor-mondrian" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/datasource-editor-olap4j" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/datasource-editor-openerp" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/datasource-editor-pmd" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/datasource-editor-reflection" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/datasource-editor-scriptable" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/datasource-editor-table" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/datasource-editor-xpath" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/report-designer" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/report-designer-assembly" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/report-designer-extension-connectioneditor" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/report-designer-extension-legacy-charts" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/report-designer-extension-pentaho" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/report-designer-extension-toc" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/report-designer-extension-wizard" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/designer/wizard-xul" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/core" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/demo" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-cda" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-charting" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-docsupport" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-drilldown" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-kettle" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-mondrian" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-olap4j" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-openerp" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-pentaho-metadata" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-reportdesigner-parser" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-sampledata" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-scripting" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-toc" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/extensions-xpath" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/legacy-charts" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/legacy-functions" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/samples" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/sdk" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine/testcases" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/tools" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/engine/wizard-core" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/configuration-editor" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/flute" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libbase" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libcss" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libdocbundle" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libfonts" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libformat" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libformula" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libformula-ui" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libloader" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libpensol" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libpixie" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/librepository" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libserializer" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libsparkline" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libswing" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/libraries/libxml" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/license" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
-
