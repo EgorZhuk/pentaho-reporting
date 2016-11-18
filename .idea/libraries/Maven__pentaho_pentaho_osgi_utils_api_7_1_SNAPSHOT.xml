@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: pentaho:pentaho-osgi-utils-api:7.1-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-osgi-utils-api/7.1-SNAPSHOT/pentaho-osgi-utils-api-7.1-20161117.031145-22.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-osgi-utils-api/7.1-SNAPSHOT/pentaho-osgi-utils-api-7.1-20161118.031136-23.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-osgi-utils-api/7.1-SNAPSHOT/pentaho-osgi-utils-api-7.1-20161117.031145-22-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-osgi-utils-api/7.1-SNAPSHOT/pentaho-osgi-utils-api-7.1-20161118.031136-23-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-osgi-utils-api/7.1-SNAPSHOT/pentaho-osgi-utils-api-7.1-20161117.031145-22-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-osgi-utils-api/7.1-SNAPSHOT/pentaho-osgi-utils-api-7.1-20161118.031136-23-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: pentaho-kettle:kettle-ui-swt:7.1-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-ui-swt/7.1-SNAPSHOT/kettle-ui-swt-7.1-20161117.051626-261.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-ui-swt/7.1-SNAPSHOT/kettle-ui-swt-7.1-20161118.050141-270.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-ui-swt/7.1-SNAPSHOT/kettle-ui-swt-7.1-20161117.051626-261-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-ui-swt/7.1-SNAPSHOT/kettle-ui-swt-7.1-20161118.050141-270-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-ui-swt/7.1-SNAPSHOT/kettle-ui-swt-7.1-20161117.051626-261-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-ui-swt/7.1-SNAPSHOT/kettle-ui-swt-7.1-20161118.050141-270-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

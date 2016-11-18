@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: pentaho:oss-licenses:zip:7.1-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho/oss-licenses/7.1-SNAPSHOT/oss-licenses-7.1-20161117.030859-29.zip!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/oss-licenses/7.1-SNAPSHOT/oss-licenses-7.1-20161118.030849-30.zip!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho/oss-licenses/7.1-SNAPSHOT/oss-licenses-7.1-20161117.030859-29-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/oss-licenses/7.1-SNAPSHOT/oss-licenses-7.1-20161118.030849-30-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho/oss-licenses/7.1-SNAPSHOT/oss-licenses-7.1-20161117.030859-29-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/oss-licenses/7.1-SNAPSHOT/oss-licenses-7.1-20161118.030849-30-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: pentaho:pentaho-versionchecker:7.1-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-versionchecker/7.1-SNAPSHOT/pentaho-versionchecker-7.1-20161117.032003-90.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-versionchecker/7.1-SNAPSHOT/pentaho-versionchecker-7.1-20161118.032142-93.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-versionchecker/7.1-SNAPSHOT/pentaho-versionchecker-7.1-20161117.032003-90-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-versionchecker/7.1-SNAPSHOT/pentaho-versionchecker-7.1-20161118.032142-93-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-versionchecker/7.1-SNAPSHOT/pentaho-versionchecker-7.1-20161117.032003-90-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-versionchecker/7.1-SNAPSHOT/pentaho-versionchecker-7.1-20161118.032142-93-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

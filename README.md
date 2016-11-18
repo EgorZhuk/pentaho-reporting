@@ -1,18 +1,9 @@
 Pentaho Reporting
 =================
 
-0. Maven Warning
-----------------
-
-If you intend to use Maven to use Pentaho Reporting, be aware that Maven does
-not resolve correctly against Pentaho's repository. The Pentaho build process
-produces invalid snapshot builds.
-
-To fix that, run the build with the ant-property set to:
-
-reporting.build.file=${REPORTING_SOURCES}/build-res/report-shared-experimental.xml
-
-A local publish will work fine as long as you use ivy to resolve the dependencies.
+0. Apache Maven
+---------------
+To build Pentaho Report Designer you will need Apache Maven 3.1.0 and newer.  
 
 
 1. Introduction
@@ -206,7 +197,7 @@ modules in one go. If you want it more finely granulated, each top level group
 provide the same service for these modules.
 
 
-To successfully build Pentaho Reporting, you do need Apache Maven 3.3.9 or newer.
+To successfully build Pentaho Reporting, you do need Apache Maven 3.1.0 or newer.
 Go download it from the Apache Maven Website if you haven’t done it yet.
 
 
@@ -227,7 +218,8 @@ If you’re going to use IntelliJ for your work, you are all set now and can
 start our IntelliJ project.
 
 If you feel paranoid and want to run the tests while building, then remove the
-‘-Dmaven.test.skip=true’ and add ‘-Dtest.long=true -Dtest.performance=true’ the command. This can take quite some time, as it also runs all
+‘-Dmaven.test.skip=true’ and add ‘-Dtest.long=true -Dtest.performance=true’ to the command.
+This can take quite some time, as it also runs all
 tests. Expect to wait an hour while all tests run.
 
 After the process is finished, you will find “Report Designer” zip and tar.gz
@@ -240,80 +232,7 @@ setting the MAVEN\_OPTS environment variable:
 
 
 	export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=256m"
-
-
-### Building the project on a CI server
-
-
-Last but not least: Do you want to run Pentaho Reporting in your own continuous
-integration server and you want to publish all created artifacts to your own
-maven-server? Then make sure you set up Maven to allow you to publish files to a
-repository.
-
-1. Install Artifactory or any other maven repository server.
-2. Copy one of the ‘ivy-settings.xml’ configurations from any of the modules and
-   edit it to point to your own Maven server. Put this file into a location
-   outside of the project, for instance into “$HOME/prd-ivy-settings.xml”
-3. Download and install maven as usual, then configure it to talk to the
-   Artifactory server.
-
-Edit your $HOME/.m2/settings.xml file and locate the ‘servers’ tag. Then
-configure it with the username and password of a user that can publish to your
-Artifactory server.  Replace ‘your-server-id’ with a name describing your
-server. You will need that later.  Replace ‘publish-username’ and
-‘publish-password’ with the username and password of an account of your
-artifactory installation that has permission to deploy artifacts.
-
-	<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"           
-	          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"           
-	          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 
-	                    http://maven.apache.org/xsd/settings-1.0.0.xsd">
-	   ...
-	   <servers>
-	     <server>
-	       <id>your-server-id</id>
-	       <username>publish-username</username>
-	       <password>publish-password</password>
-	       <configuration>
-	         <wagonprovider>httpclient</wagonprovider>
-	         <httpconfiguration>
-	           <put>
-	             <params>
-	               <param>
-	                 <name>http.authentication.preemptive</name>
-	                 <value>%b,true</value>
-	               </param>
-	             </params>
-	           </put>
-	         </httpconfiguration>
-	       </configuration>
-	     </server>
-	   </servers>
-	    ..
-	</settings>
-
-
-Now set up your CI job. You can either override the ivy properties on each CI
-job, or your can create a global default by creating a
-‘$HOME/.pentaho-reporting-build-settings.properties’ file. The settings of this
-file will be included in all Ant-builds for Pentaho Reporting projects.
-
-
-	ivy.settingsurl=file:${user.home}/prd-ivy-settings.xml
-	ivy.repository.id=your-server-id
-	ivy.repository.publish=http://repo.your-server.com/ext-snapshot-local
-
-
-After that, test your setup by invoking
-
-
-	ant -f multibuild.xml continuous
-
-
-It should run without errors now. If you see errors on publish, check your Maven
-configuration or your Artifactory installation.
-
-
+	
 
 7. Reporting Bugs
 -----------------

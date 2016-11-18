@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: pentaho-kettle:kettle5-log4j-plugin:7.1-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle5-log4j-plugin/7.1-SNAPSHOT/kettle5-log4j-plugin-7.1-20161117.051709-347.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle5-log4j-plugin/7.1-SNAPSHOT/kettle5-log4j-plugin-7.1-20161118.050223-359.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle5-log4j-plugin/7.1-SNAPSHOT/kettle5-log4j-plugin-7.1-20161117.051709-347-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle5-log4j-plugin/7.1-SNAPSHOT/kettle5-log4j-plugin-7.1-20161118.050223-359-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle5-log4j-plugin/7.1-SNAPSHOT/kettle5-log4j-plugin-7.1-20161117.051709-347-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle5-log4j-plugin/7.1-SNAPSHOT/kettle5-log4j-plugin-7.1-20161118.050223-359-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

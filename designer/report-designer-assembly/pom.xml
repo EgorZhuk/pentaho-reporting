@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>pentaho-report-designer-parent-pom</artifactId>
@@ -12,6 +13,7 @@
     <dist.name>prd-ce-${project.version}</dist.name>
     <stage.dir>${project.build.directory}/stage</stage.dir>
     <stage.dir.designer>${stage.dir}/report-designer</stage.dir.designer>
+    <macos.jre.path></macos.jre.path>
   </properties>
   <dependencies>
     <dependency>
@@ -775,7 +777,9 @@
               <outputDirectory>${stage.dir.designer}/lib</outputDirectory>
               <includeTypes>jar</includeTypes>
               <includeScope>compile</includeScope>
-              <excludeArtifactIds>derby,derbyclient,h2,jaybird,jt400,LucidDbClient-minimal,sapdbc,sqlite-jdbc,pdi-dataservice-client-plugin</excludeArtifactIds>
+              <excludeArtifactIds>
+                derby,derbyclient,h2,jaybird,jt400,LucidDbClient-minimal,sapdbc,sqlite-jdbc,pdi-dataservice-client-plugin
+              </excludeArtifactIds>
             </configuration>
           </execution>
           <execution>
@@ -786,7 +790,9 @@
             </goals>
             <configuration>
               <outputDirectory>${stage.dir.designer}/lib/jdbc</outputDirectory>
-              <includeArtifactIds>derby,derbyclient,h2,hsqldb,infobright-core,jaybird,jt400,LucidDbClient-minimal,monetdb-jdbc,postgresql,sapdbc,sqlite-jdbc,pdi-dataservice-client-plugin</includeArtifactIds>
+              <includeArtifactIds>
+                derby,derbyclient,h2,hsqldb,infobright-core,jaybird,jt400,LucidDbClient-minimal,monetdb-jdbc,postgresql,sapdbc,sqlite-jdbc,pdi-dataservice-client-plugin
+              </includeArtifactIds>
             </configuration>
           </execution>
           <execution>
@@ -796,33 +802,82 @@
               <goal>unpack-dependencies</goal>
             </goals>
             <configuration>
-              <includeArtifactIds>pentaho-big-data-plugin,pentaho-cassandra-plugin,kettle-xml-plugin,kettle-json-plugin</includeArtifactIds>
+              <includeArtifactIds>
+                pentaho-big-data-plugin,pentaho-cassandra-plugin,kettle-xml-plugin,kettle-json-plugin
+              </includeArtifactIds>
               <outputDirectory>${stage.dir.designer}/plugins</outputDirectory>
             </configuration>
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-assembly-plugin</artifactId>
-        <version>3.0.0</version>
-        <executions>
-          <execution>
-            <id>standalone</id>
-            <phase>package</phase>
-            <goals>
-              <goal>single</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <descriptors>
-            <descriptor>/assembly/bin.xml</descriptor>
-          </descriptors>
-          <appendAssemblyId>false</appendAssemblyId>
-          <finalName>${dist.name}</finalName>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
+  <profiles>
+    <profile>
+      <id>mac</id>
+      <activation>
+        <property>
+          <name>macos.jre.path</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>sh.tak.appbundler</groupId>
+            <artifactId>appbundle-maven-plugin</artifactId>
+            <version>1.2.0</version>
+            <configuration>
+              <bundleName>Pentaho Report Designer</bundleName>
+              <mainClass>org.pentaho.commons.launcher.Launcher</mainClass>
+              <dictionaryFile>${project.basedir}\resource.mac\Contents\Info.plist</dictionaryFile>
+              <iconFile>${project.basedir}\assembly\pentaho_reporting.icns</iconFile>
+              <generateDiskImageFile>true</generateDiskImageFile>
+              <jrePath>D:\macosjre</jrePath>
+            </configuration>
+            <executions>
+              <execution>
+                <phase>package</phase>
+                <goals>
+                  <goal>bundle</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>winlinux</id>
+      <activation>
+        <property>
+          <name>!macos.jre.path</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <version>3.0.0</version>
+            <executions>
+              <execution>
+                <id>standalone</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <descriptors>
+                <descriptor>/assembly/bin.xml</descriptor>
+              </descriptors>
+              <appendAssemblyId>false</appendAssemblyId>
+              <finalName>${dist.name}</finalName>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>

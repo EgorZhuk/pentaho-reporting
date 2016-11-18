@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: pentaho:pentaho-platform-core:7.1-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-platform-core/7.1-SNAPSHOT/pentaho-platform-core-7.1-20161117.064642-200.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-platform-core/7.1-SNAPSHOT/pentaho-platform-core-7.1-20161118.062809-203.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-platform-core/7.1-SNAPSHOT/pentaho-platform-core-7.1-20161117.064642-200-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-platform-core/7.1-SNAPSHOT/pentaho-platform-core-7.1-20161118.062809-203-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-platform-core/7.1-SNAPSHOT/pentaho-platform-core-7.1-20161117.064642-200-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-platform-core/7.1-SNAPSHOT/pentaho-platform-core-7.1-20161118.062809-203-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

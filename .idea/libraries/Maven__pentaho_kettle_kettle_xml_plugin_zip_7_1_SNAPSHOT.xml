@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: pentaho-kettle:kettle-xml-plugin:zip:7.1-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-xml-plugin/7.1-SNAPSHOT/kettle-xml-plugin-7.1-20161117.074738-452.zip!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-xml-plugin/7.1-SNAPSHOT/kettle-xml-plugin-7.1-20161118.072835-464.zip!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-xml-plugin/7.1-SNAPSHOT/kettle-xml-plugin-7.1-20161117.074738-452-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-xml-plugin/7.1-SNAPSHOT/kettle-xml-plugin-7.1-20161118.072835-464-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-xml-plugin/7.1-SNAPSHOT/kettle-xml-plugin-7.1-20161117.074738-452-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-kettle/kettle-xml-plugin/7.1-SNAPSHOT/kettle-xml-plugin-7.1-20161118.072835-464-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
