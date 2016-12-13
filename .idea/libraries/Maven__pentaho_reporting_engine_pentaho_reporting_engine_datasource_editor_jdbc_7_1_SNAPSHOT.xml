@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho-reporting-engine:pentaho-reporting-engine-datasource-editor-jdbc:7.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-reporting-engine/pentaho-reporting-engine-datasource-editor-jdbc/7.1-SNAPSHOT/pentaho-reporting-engine-datasource-editor-jdbc-7.1-20161208.145901-162.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-reporting-engine/pentaho-reporting-engine-datasource-editor-jdbc/7.1-SNAPSHOT/pentaho-reporting-engine-datasource-editor-jdbc-7.1-20161208.145901-162-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-reporting-engine/pentaho-reporting-engine-datasource-editor-jdbc/7.1-SNAPSHOT/pentaho-reporting-engine-datasource-editor-jdbc-7.1-20161208.145901-162-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

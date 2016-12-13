@@ -1,18 +1,9 @@
 Pentaho Reporting
 =================
 
-0. Maven Warning
-----------------
-
-If you intend to use Maven to use Pentaho Reporting, be aware that Maven does
-not resolve correctly against Pentaho's repository. The Pentaho build process
-produces invalid snapshot builds.
-
-To fix that, run the build with the ant-property set to:
-
-reporting.build.file=${REPORTING_SOURCES}/build-res/report-shared-experimental.xml
-
-A local publish will work fine as long as you use ivy to resolve the dependencies.
+0. Apache Maven
+---------------
+To build Pentaho Report Designer you will need Apache Maven 3.1.0 and newer.  
 
 
 1. Introduction
@@ -84,13 +75,13 @@ process reports. Reports with more than 400 pages or about 50.000 rows of data
 may require additional memory and/or adjustments to the global configuration
 parameters of the reporting engine.
 
-The Pentaho Reporting Engine requires Java 1.5 or higher. The Pentaho Report
-Designer and Pentaho Report Design Wizard need at least Java 1.6 or higher.
+The Pentaho Reporting Engine requires Java 1.8 or higher. The Pentaho Report
+Designer and Pentaho Report Design Wizard also need at least Java 1.8 or higher.
 
   Warning:
   --------
   Pentaho Reporting requires a Java Runtime environment that is fully
-  compatible to the Java Platform Specification 5.0 (JSR-176). It will
+  compatible to the Java Platform Specification 8.0 (JSR-337). It will
   not run with the GNU GCJ suite of tools.
 
 
@@ -206,8 +197,8 @@ modules in one go. If you want it more finely granulated, each top level group
 provide the same service for these modules.
 
 
-To successfully build Pentaho Reporting, you do need Apache Ant 1.8.2 or newer.
-Go download it from the Apache Ant Website if you haven’t done it yet.
+To successfully build Pentaho Reporting, you do need Apache Maven 3.1.0 or newer.
+Go download it from the Apache Maven Website if you haven’t done it yet.
 
 
 After you cloned our Git repository, you have all the source files on your
@@ -217,114 +208,34 @@ third party libraries used in the code.
 
 On a command line in the project directory, call
 
-	ant resolve
+	mvn clean install -Dmaven.test.skip=true
 
-to download all libraries.
+to build all modules without running tests.
 
+To build both Win/Linux and Mac distributions call
+
+    mvn clean install -P mac,winlinux -Dmac.jre.path=YOUR_MAC_OS_JRE_PATH -Dmaven.test.skip=true
 
 If you’re going to use IntelliJ for your work, you are all set now and can
 
 start our IntelliJ project.
 
-To build all projects locally, invoke
-
-	ant continuous-local-testless
-
-to run.
-
-
-If you feel paranoid and want to run the tests while building, then use the
-‘continuous-local’ target. This can take quite some time, as it also runs all
+If you feel paranoid and want to run the tests while building, then remove the
+‘-Dmaven.test.skip=true’ and add ‘-Dtest.long=true -Dtest.performance=true’ to the command.
+This can take quite some time, as it also runs all
 tests. Expect to wait an hour while all tests run.
 
-
-	ant continuous-local
-
-
 After the process is finished, you will find “Report Designer” zip and tar.gz
-packages in the folder “/designer/report-designer/assembly/dist”.
+packages in the folder “/designer/report-designer-assembly/target”.
 
 
 If you get OutOfMemoryErrors pointing to a JUnitTask, or if you get OutOfMemory
 “PermGen Space” errors, increase the memory of your Ant process to 1024m by
-setting the ANT\_OPTS environment variable:
+setting the MAVEN\_OPTS environment variable:
 
 
-	export ANT\_OPTS="-Xmx1024m -XX:MaxPermSize=256m"
-
-
-### Building the project on a CI server
-
-
-Last but not least: Do you want to run Pentaho Reporting in your own continuous
-integration server and you want to publish all created artifacts to your own
-maven-server? Then make sure you set up Maven to allow you to publish files to a
-repository.
-
-1. Install Artifactory or any other maven repository server.
-2. Copy one of the ‘ivy-settings.xml’ configurations from any of the modules and
-   edit it to point to your own Maven server. Put this file into a location
-   outside of the project, for instance into “$HOME/prd-ivy-settings.xml”
-3. Download and install maven as usual, then configure it to talk to the
-   Artifactory server.
-
-Edit your $HOME/.m2/settings.xml file and locate the ‘servers’ tag. Then
-configure it with the username and password of a user that can publish to your
-Artifactory server.  Replace ‘your-server-id’ with a name describing your
-server. You will need that later.  Replace ‘publish-username’ and
-‘publish-password’ with the username and password of an account of your
-artifactory installation that has permission to deploy artifacts.
-
-	<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"           
-	          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"           
-	          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 
-	                    http://maven.apache.org/xsd/settings-1.0.0.xsd">
-	   ...
-	   <servers>
-	     <server>
-	       <id>your-server-id</id>
-	       <username>publish-username</username>
-	       <password>publish-password</password>
-	       <configuration>
-	         <wagonprovider>httpclient</wagonprovider>
-	         <httpconfiguration>
-	           <put>
-	             <params>
-	               <param>
-	                 <name>http.authentication.preemptive</name>
-	                 <value>%b,true</value>
-	               </param>
-	             </params>
-	           </put>
-	         </httpconfiguration>
-	       </configuration>
-	     </server>
-	   </servers>
-	    ..
-	</settings>
-
-
-Now set up your CI job. You can either override the ivy properties on each CI
-job, or your can create a global default by creating a
-‘$HOME/.pentaho-reporting-build-settings.properties’ file. The settings of this
-file will be included in all Ant-builds for Pentaho Reporting projects.
-
-
-	ivy.settingsurl=file:${user.home}/prd-ivy-settings.xml
-	ivy.repository.id=your-server-id
-	ivy.repository.publish=http://repo.your-server.com/ext-snapshot-local
-
-
-After that, test your setup by invoking
-
-
-	ant -f multibuild.xml continuous
-
-
-It should run without errors now. If you see errors on publish, check your Maven
-configuration or your Artifactory installation.
-
-
+	export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=256m"
+	
 
 7. Reporting Bugs
 -----------------

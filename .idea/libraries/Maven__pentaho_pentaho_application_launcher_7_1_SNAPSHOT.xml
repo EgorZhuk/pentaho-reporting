@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho:pentaho-application-launcher:7.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-application-launcher/7.1-SNAPSHOT/pentaho-application-launcher-7.1-20161206.031131-147.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-application-launcher/7.1-SNAPSHOT/pentaho-application-launcher-7.1-20161206.031131-147-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-application-launcher/7.1-SNAPSHOT/pentaho-application-launcher-7.1-20161206.031131-147-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

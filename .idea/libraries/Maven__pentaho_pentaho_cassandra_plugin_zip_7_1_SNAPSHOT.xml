@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho:pentaho-cassandra-plugin:zip:7.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-cassandra-plugin/7.1-SNAPSHOT/pentaho-cassandra-plugin-7.1-20161206.054847-188.zip!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-cassandra-plugin/7.1-SNAPSHOT/pentaho-cassandra-plugin-7.1-20161206.054847-188-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-cassandra-plugin/7.1-SNAPSHOT/pentaho-cassandra-plugin-7.1-20161206.054847-188-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

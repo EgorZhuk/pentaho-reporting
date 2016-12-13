@@ -24,6 +24,8 @@ build-res/module-scripts/
 .idea/compiler.xml
 .idea/dictionaries/
 .idea/inspectionProfiles/
+.idea/checkstyle-idea.xml
+.idea/codeStyleSettings.xml
 *.lck
 target
 checkstyle/

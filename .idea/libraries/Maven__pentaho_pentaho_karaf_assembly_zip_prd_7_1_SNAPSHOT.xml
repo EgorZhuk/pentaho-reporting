@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho:pentaho-karaf-assembly:zip:prd:7.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-karaf-assembly/7.1-SNAPSHOT/pentaho-karaf-assembly-7.1-20161206.110313-54-prd.zip!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-karaf-assembly/7.1-SNAPSHOT/pentaho-karaf-assembly-7.1-20161206.110313-54-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-karaf-assembly/7.1-SNAPSHOT/pentaho-karaf-assembly-7.1-20161206.110313-54-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

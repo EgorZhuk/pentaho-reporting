@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho:pentaho-metadata:7.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-metadata/7.1-SNAPSHOT/pentaho-metadata-7.1-20161206.050926-159.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-metadata/7.1-SNAPSHOT/pentaho-metadata-7.1-20161206.050926-159-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-metadata/7.1-SNAPSHOT/pentaho-metadata-7.1-20161206.050926-159-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

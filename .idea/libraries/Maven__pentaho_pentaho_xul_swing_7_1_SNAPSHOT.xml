@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho:pentaho-xul-swing:7.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-xul-swing/7.1-SNAPSHOT/pentaho-xul-swing-7.1-20161208.151713-156.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-xul-swing/7.1-SNAPSHOT/pentaho-xul-swing-7.1-20161208.151713-156-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pentaho-xul-swing/7.1-SNAPSHOT/pentaho-xul-swing-7.1-20161208.151713-156-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

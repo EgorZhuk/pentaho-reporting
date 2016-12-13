@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho-reporting-engine:pentaho-reporting-engine-classic-core-test:7.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-reporting-engine/pentaho-reporting-engine-classic-core-test/7.1-SNAPSHOT/pentaho-reporting-engine-classic-core-test-7.1-20161208.153536-231.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-reporting-engine/pentaho-reporting-engine-classic-core-test/7.1-SNAPSHOT/pentaho-reporting-engine-classic-core-test-7.1-20161208.153536-231-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho-reporting-engine/pentaho-reporting-engine-classic-core-test/7.1-SNAPSHOT/pentaho-reporting-engine-classic-core-test-7.1-20161208.153536-231-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: pentaho:pdi-dataservice-client-plugin:7.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pdi-dataservice-client-plugin/7.1-SNAPSHOT/pdi-dataservice-client-plugin-7.1-20161212.160646-119.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pdi-dataservice-client-plugin/7.1-SNAPSHOT/pdi-dataservice-client-plugin-7.1-20161212.160646-119-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/pentaho/pdi-dataservice-client-plugin/7.1-SNAPSHOT/pdi-dataservice-client-plugin-7.1-20161212.160646-119-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
